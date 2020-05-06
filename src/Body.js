@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
 import './Body.css';
-import { Image } from 'react-bootstrap'
+import { Image, Button } from 'react-bootstrap'
 import projectImg from './images/project.png';
 import lineImg from './images/line.png';
 import faceImg from'./images/face.png';
 import lineImgCircle from './images/line2.png';
+import gameImg from './images/game.png';
 import WOW from 'wow.js';
+import ScrollUpButton from "react-scroll-up-button";
 
 class Body extends Component {
-    // constructor(props){
-    //     super(props)
-    //     this.state = {
-    //         isShowContentBox: false
-    //     }
-    //     this.handleScroll = this.handleScroll.bind(this);
-    // }
-
+   
+    
    componentWillMount() {
     new WOW().init();
    }
     render() {
         return (
             <div className="body-container">
+                <ScrollUpButton AnimationDuration={1000}/>
                <nav>
                    <ul>
                        <li className="item item-info">
@@ -47,10 +44,11 @@ class Body extends Component {
             
                <Image src={lineImg} width="30%"/>
                 <p>Châm ngôn: Sau này, cần cù thì bù siêng năng, chỉ có làm thì mới có ăn, những cái loại không làm mà muốn có ăn thì ...</p>
-                <p>Triết lý: Liều nhiều thì ăn nhiều, liều ít thì ăn ít, không liều thì không có mà ăn</p>
+                <p>Triết lý: Ra xã hội làm ăn bươn chải, liều nhiều thì ăn nhiều, liều ít thì ăn ít, không liều thì không có mà ăn</p>
                <Image src={lineImgCircle} width="30%"/>
 
-                <h1 id="title">TIMELINE</h1>
+                <h1 id="category-item">TIMELINE</h1>
+               
                 <div className="timeline-container">
                     <div class="wow bounceInRight" id="timeline-item">
                         <div className="timeline-sequence"></div>
@@ -76,7 +74,7 @@ class Body extends Component {
                     <div class="wow bounceInLeft" id="timeline-item">
                         <div className="timeline-sequence"></div>
                         <div className="timeline-box boxInLeftSide ">
-                            <h2>2017</h2>
+                            <h2>2018</h2>
                             <p id="timeline-content">Thi qua C++</p>
                         </div>
                     </div>
@@ -91,15 +89,16 @@ class Body extends Component {
 
                 <Image src={lineImgCircle} width="30%"/>
 
-                <h1 id="title">HOBBIES</h1>
-
-            
+                <h1 id="category-item">HOBBIES</h1>
+               
+                <div className="hobbies-container">
+                    <Image src={gameImg} width="15%" style={{paddingLeft: "70px"}}></Image>
+                </div>
                
             </div>
            
         );
     }
-
 }
 
 export default Body;
