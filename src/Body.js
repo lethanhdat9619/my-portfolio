@@ -6,6 +6,7 @@ import lineImg from './images/line.png';
 import faceImg from'./images/face.png';
 import lineImgCircle from './images/line2.png';
 import gameImg from './images/game.png';
+import dotaImg from './images/dota2.png';
 import WOW from 'wow.js';
 import ScrollUpButton from "react-scroll-up-button";
 
@@ -92,7 +93,8 @@ class Body extends Component {
                 <h1 id="category-item">HOBBIES</h1>
                
                 <div className="hobbies-container">
-                    <Image src={gameImg} width="15%" style={{paddingLeft: "70px"}}></Image>
+                    <Image src={dotaImg} width="15%" style={{paddingLeft: "70px"}}></Image>
+
                 </div>
                
             </div>
