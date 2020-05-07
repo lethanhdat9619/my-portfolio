@@ -7,6 +7,8 @@ import faceImg from'./images/face.png';
 import lineImgCircle from './images/line2.png';
 import gameImg from './images/game.png';
 import dotaImg from './images/dota2.png';
+import pubgImg from './images/pubg.png';
+import csImg from './images/counter_strike.png';
 import WOW from 'wow.js';
 import ScrollUpButton from "react-scroll-up-button";
 
@@ -121,8 +123,22 @@ handleScroll() {
                 <h1 id="category-item">HOBBIES</h1>
                
                 <div className="hobbies-container">
-                    <Image src={dotaImg} width="15%" style={{paddingLeft: "70px"}}></Image>
-
+                    <Image src={gameImg} width="20%" className="hobbie-title"></Image>
+                    <ul>
+                        <li>
+                        <Image src={dotaImg} width="200px" style={{paddingTop: "70px"}}></Image>
+                        </li>
+                        <li>
+                        <Image src={pubgImg} width="200px" style={{paddingTop: "70px"}}></Image>
+                        </li>
+                        <li>
+                        <Image src={csImg} width="200px" style={{paddingTop: "70px"}}></Image>
+                        </li>
+                    </ul>
+                   
+                    
+                    
+                    
                 </div>
                     
             </div>
