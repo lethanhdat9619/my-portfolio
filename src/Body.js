@@ -11,7 +11,35 @@ import ScrollUpButton from "react-scroll-up-button";
 
 class Body extends Component {
    
-    
+    constructor(props) {
+    super(props);
+    this.state = {
+      scrollingLock: false
+    };
+    // example how to bind object in React ES6
+    this.handleScroll = this.handleScroll.bind(this)
+}
+componentDidMount(){
+    window.addEventListener('scroll', this.handleScroll);
+}
+componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+}
+handleScroll() {
+
+    if (window.scrollY > 100) {
+      console.log("should lock");
+      this.setState({
+        scrollingLock: true
+      });
+    } else if (window.scrollY < 100) {
+      console.log("not locked" );
+      this.setState({
+        scrollingLock: false
+      });
+    }
+  
+  }
    componentWillMount() {
     new WOW().init();
    }
@@ -19,7 +47,7 @@ class Body extends Component {
         return (
             <div className="body-container">
                 <ScrollUpButton AnimationDuration={1000}/>
-               <nav>
+               <nav id="navbar" style={{position: this.state.scrollingLock ? "fixed" : "relative"}}>
                    <ul>
                        <li className="item item-info">
                        <Image id="label-img" src={faceImg} roundedCircle width="17%"/>
@@ -44,7 +72,7 @@ class Body extends Component {
             
                <Image src={lineImg} width="30%"/>
                 <p>Châm ngôn: Sau này, cần cù thì bù siêng năng, chỉ có làm thì mới có ăn, những cái loại không làm mà muốn có ăn thì ...</p>
-                <p>Triết lý: Ra xã hội làm ăn bươn chải, liều nhiều thì ăn nhiều, liều ít thì ăn ít, không liều thì không có mà ăn</p>
+                <p>Triết lý: Ra xã hội làm ăn bươn chải, liều nhiều thì ăn nhiều, liều ít thì ăn ít, không liều thì không có mà ăn (Huấn Rô Sì)</p>
                <Image src={lineImgCircle} width="30%"/>
 
                 <h1 id="category-item">TIMELINE</h1>
@@ -94,7 +122,7 @@ class Body extends Component {
                 <div className="hobbies-container">
                     <Image src={gameImg} width="15%" style={{paddingLeft: "70px"}}></Image>
                 </div>
-               
+                    
             </div>
            
         );

@@ -10,7 +10,9 @@
 
     /* background: linear-gradient(to left, #ec8c69, #ed6ea0); */
 
-
+nav {
+    
+}
 ul {
   list-style: none;
   margin: 0;
@@ -155,7 +157,6 @@ h2 {
 }
 .hobbies-container {
     position: relative;
-
 }
 
 
