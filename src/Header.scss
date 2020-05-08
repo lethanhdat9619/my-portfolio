@@ -4,4 +4,20 @@
     background-color: whitesmoke;
     color: blue;
     height: 100px;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    color: rgb(46, 131, 180);
+    font-weight: 700;
+    text-shadow: 2px 2px 0px #1d718a, 5px 5px 0px rgb(146, 210, 235);
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.portfolio {
+    font-size: 48px;
 }
