@@ -1,0 +1,105 @@
+#category-item {
+    padding-top: 3%;
+    color: white;
+    font-weight: 300;
+    font-size: 180%;
+    font-family: 'Fredoka One', cursive;
+    font-style: italic;
+}
+
+p {
+    padding-top: 5%;
+    color: #182c4e;
+    text-align: center;
+}
+.timeline-container {
+    position: relative;
+    height: auto;
+}
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 1%;
+    bottom: 0;
+    left: 50%;
+   
+}
+.timeline-sequence {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 49.5%;
+    background-color: white;
+    border: 4px solid #ff93c2;
+    top: 45px;
+    border-radius: 50%;
+}
+
+.timeline-box {
+    position: absolute;
+    top: 45px;
+    width: 26%;
+    height: auto;
+    padding: 20px 30px;
+    background-color: rgba(71,66,120,0.2);
+    -webkit-box-shadow: 4px 5px 7px 0 rgba(71,66,120,0.2);
+    box-shadow: 4px 5px 7px 0 rgba(71,66,120,0.2);
+    border-radius: 6px;
+}
+.boxInRightSide {
+    left: 55%;
+}
+.boxInLeftSide {
+    left: 20%;
+}
+.displayNone {
+    display: none;
+}
+#timeline-content {
+    font-size: 80%;
+}
+#timeline-item {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    z-index: 1;
+}
+h2 {
+    font-style: italic;
+    font-family: 'Fredoka One', cursive;
+}
+.hobbies-container {
+    position: relative;
+
+}
+.hobbie-title {
+    position: absolute;
+    left: 130px;
+}
+.hobbieImg {
+    width: 400px;
+    padding-top: 70px;
+}
+.dota2Img {
+    padding-top: 100px;
+    margin-right: 80px;
+}
+.counterstrikeImg {
+    margin-left: 80px;
+}
+
+
+@media only screen and (max-width: 1600px) {
+    p {
+        font-size: 22px;
+    }
+
+  }
+@media only screen and (max-width: 1380px) {
+    p {
+        font-size: 20px;
+    }
+
+  }
