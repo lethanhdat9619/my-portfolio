@@ -13,7 +13,7 @@ class Info extends Component {
     render() {
         return (
             <div>
-                <h1 class="animated bounceInDown delay-0.5s" id="title">INFOMATION</h1>
+                <h1 class="animated bounceInDown delay-0.5s" id="title">INFORMATION</h1>
             
             <Image src={lineImg} width="30%"/>
              <p>Châm ngôn: Sau này, cần cù thì bù siêng năng, chỉ có làm thì mới có ăn, những cái loại không làm mà muốn có ăn thì ...</p>

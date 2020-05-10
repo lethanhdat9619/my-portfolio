@@ -54,14 +54,15 @@ class Body extends Component {
                    </ul>
                </nav>
                <div className="social-container">
-                <SocialIcon className="facebook" url="http://facebook.com"/>
-                <SocialIcon className="facebook"url="http://youtube.com" />
+                <SocialIcon className="facebook" url="https://www.facebook.com/thanhdat.le.2909"/>
+                <SocialIcon className="facebook" url="http://youtube.com" />
                 <SocialIcon className="facebook" url="http://spotify.com" />
-                <SocialIcon className="facebook" url="http://soundcloud.com" />
-                <SocialIcon className="facebook" url="http://github.com" />
+                <SocialIcon className="facebook" url="https://soundcloud.com/thanhdat-le" />
+                <SocialIcon className="facebook" url="https://github.com/lethanhdat9619" />
                </div>
                 <Switch>
-                    <Route exact path="/information" component={Info} />
+                    <Route exact path="/" component={Info} />
+                    <Route path="/information" component={Info} />
                     <Route path="/project" component={Project} />
                     <Route component={NotFound} />
                 </Switch>
