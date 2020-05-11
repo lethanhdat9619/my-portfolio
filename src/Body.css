@@ -3,10 +3,12 @@
 .body-container {
     text-align: center;
     align-content: center;
-    padding-top: 20px;
     background: linear-gradient(325deg, skyblue, rgb(139, 194, 245), rgb(128, 185, 238), skyblue);
     height: auto;
+    padding: 20px 100px 10px 100px;
 }
+
+
 
 ul {
   list-style: none;

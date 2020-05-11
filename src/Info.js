@@ -12,12 +12,12 @@ import { Image } from 'react-bootstrap';
 class Info extends Component {
     render() {
         return (
-            <div>
+            <div class="info-container">
                 <h1 class="animated bounceInDown delay-0.5s" id="title">INFORMATION</h1>
             
             <Image src={lineImg} width="30%"/>
-             <p>Châm ngôn: Sau này, cần cù thì bù siêng năng, chỉ có làm thì mới có ăn, những cái loại không làm mà muốn có ăn thì ...</p>
-             <p>Triết lý: Ra xã hội làm ăn bươn chải, liều nhiều thì ăn nhiều, liều ít thì ăn ít, không liều thì không có mà ăn (Huấn Rô Sì)</p>
+             <p>Welcome to my website! I'm a Front-end Developer with almost 1 year experience building and maintain responsive websites. Passionate about design webs usability and User experience design.    </p>
+             <p>I like adventures and talking risks so every second i search for a new thing to do which will help me open up for new opportuinties as well as teach me new ideas about life.</p>
             <Image src={lineImgCircle} width="30%"/>
         
              <h1 id="category-item">TIMELINE</h1>
@@ -27,7 +27,7 @@ class Info extends Component {
                      <div className="timeline-sequence"></div>
                      <div className="timeline-box boxInRightSide">
                          <h2>2015</h2>
-                         <p id="timeline-content"> Vào học tại Học viện Công nghệ Bưu chính Viễn thông</p>
+                         <p id="timeline-content">Study at Posts and Telecommunications Institue of Technology</p>
                      </div>
                  </div>
                  <div class="wow bounceInLeft" id="timeline-item">
@@ -47,22 +47,29 @@ class Info extends Component {
                  <div class="wow bounceInLeft" id="timeline-item">
                      <div className="timeline-sequence"></div>
                      <div className="timeline-box boxInLeftSide ">
-                         <h2>2018</h2>
-                         <p id="timeline-content">Thi qua C++</p>
+                         <h2>2019</h2>
+                         <p id="timeline-content">Working at VTI company</p>
                      </div>
                  </div>
                  <div class="wow bounceInRight" id="timeline-item">
                      <div className="timeline-sequence"></div>
                      <div className="timeline-box boxInRightSide ">
                          <h2>2020</h2>
-                         <p id="timeline-content">Tốt nghiệp</p>
+                         <p id="timeline-content">Graduated from PTIT </p>
                      </div>
                  </div>
              </div>
+
+             <h1 id="category-item">SKILLS</h1>
+            
+            <p>HTML, CSS, JavaScript</p>
+            <p>ReactJS, VueJS, ExpressJS</p>
+            <p>MySQL, MongoDB</p>
+            <p>Clear communication and highly organized</p>
         
              <Image src={lineImgCircle} width="30%"/>
         
-             <h1 id="category-item">HOBBIES</h1>
+             <h1 id="category-item">PERSONAL INTERESTS</h1>
             
              <div className="hobbies-container">
                  <Image src={gameImg} width="20%" className="hobbie-title"></Image>
@@ -80,13 +87,14 @@ class Info extends Component {
                  </ul>
                 
              </div>
-             
+
              <Image src={lineImgCircle} width="30%"/>
         
              <h1 id="category-item">SIGNATURE</h1>
         
              <Image src={signature}></Image> 
             </div>
+
         );
     }
 }
