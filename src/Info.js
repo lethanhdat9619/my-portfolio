@@ -34,21 +34,21 @@ class Info extends Component {
                      <div className="timeline-sequence"></div>
                      <div className="timeline-box boxInLeftSide ">
                          <h2>2016</h2>
-                         <p id="timeline-content">Thi lại môn C++</p>
+                         <p id="timeline-content">Join PTIT Club</p>
                      </div>
                  </div>
                  <div class="wow bounceInRight" id="timeline-item">
                      <div className="timeline-sequence"></div>
                      <div className="timeline-box boxInRightSide ">
                          <h2>2017</h2>
-                         <p id="timeline-content">Tiếp tục thi lại môn C++</p>
+                         <p id="timeline-content">Learn Toeic and Japanese</p>
                      </div>
                  </div>
                  <div class="wow bounceInLeft" id="timeline-item">
                      <div className="timeline-sequence"></div>
                      <div className="timeline-box boxInLeftSide ">
                          <h2>2019</h2>
-                         <p id="timeline-content">Working at VTI company</p>
+                         <p id="timeline-content">Work at VTI company</p>
                      </div>
                  </div>
                  <div class="wow bounceInRight" id="timeline-item">
