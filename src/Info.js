@@ -17,7 +17,7 @@ class Info extends Component {
             
             <Image src={lineImg} width="30%"/>
              <p>Welcome to my website! I'm a Front-end Developer with almost 1 year experience building and maintain responsive websites. Passionate about design webs usability and User experience design.    </p>
-             <p>I like adventures and talking risks so every second i search for a new thing to do which will help me open up for new opportuinties as well as teach me new ideas about life.</p>
+             <p>I like adventures and talking risks so every second i search for a new thing to do which will help me open up for new opportunities as well as teach me new ideas about life.</p>
             <Image src={lineImgCircle} width="30%"/>
         
              <h1 id="category-item">TIMELINE</h1>
@@ -34,14 +34,14 @@ class Info extends Component {
                      <div className="timeline-sequence"></div>
                      <div className="timeline-box boxInLeftSide ">
                          <h2>2016</h2>
-                         <p id="timeline-content">Join PTIT Club</p>
+                         <p id="timeline-content">Join PTIT IT Club</p>
                      </div>
                  </div>
                  <div class="wow bounceInRight" id="timeline-item">
                      <div className="timeline-sequence"></div>
                      <div className="timeline-box boxInRightSide ">
                          <h2>2017</h2>
-                         <p id="timeline-content">Learn Toeic and Japanese</p>
+                         <p id="timeline-content">Learn English and Japanese</p>
                      </div>
                  </div>
                  <div class="wow bounceInLeft" id="timeline-item">

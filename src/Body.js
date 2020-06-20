@@ -21,12 +21,22 @@ class Body extends Component {
    componentWillMount() {
     new WOW().init();
    }
+   componentDidMount() {
+    window.addEventListener('scroll', () => {
+        let activeClass = 'sticky-navbar';
+         if(window.scrollY <= 150){  
+             activeClass = 'navbar';
+         }
+         this.setState({ activeClass });
+    })
+   }
+
     render() {
         return (
             <Router>
             <div className="body-container">
                 <ScrollUpButton AnimationDuration={1000}/>
-               <nav id="navbar">
+               <nav id={`${this.state.activeClass}`}>
                    <ul>
                    <Link to ="/information">
                        <li className="item item-info">
