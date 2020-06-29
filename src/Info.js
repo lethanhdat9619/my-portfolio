@@ -19,7 +19,7 @@ class Info extends Component {
              <p>Welcome to my website! I'm a Front-end Developer with almost 1 year experience building and maintain responsive websites. Passionate about design webs usability and User experience design.    </p>
              <p>I like adventures and talking risks so every second i search for a new thing to do which will help me open up for new opportunities as well as teach me new ideas about life.</p>
             <Image src={lineImgCircle} width="30%"/>
-        
+            
              <h1 id="category-item">TIMELINE</h1>
             
              <div className="timeline-container">
