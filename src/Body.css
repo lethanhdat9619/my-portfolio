@@ -5,17 +5,22 @@
     align-content: center;
     background: linear-gradient(325deg, skyblue, rgb(139, 194, 245), rgb(128, 185, 238), skyblue);
     height: auto;
-    padding: 20px 100px 10px 100px;
+    padding: 20px 100px 10px 0px;
 }
 
 ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-left: 6%;
 }
 #sticky-navbar {
     position: fixed;
-    top: 10px;
+    top: 0px;
+    height: 90px;
+    width: auto;
+    padding-top: 10px;
+    background: whitesmoke;
+    z-index: 2;
 }
 #navbar {
     position: relative;
@@ -27,7 +32,7 @@ li {
 }
 .item {
     background-color: red;
-    width: 22%;
+    width: 20%;
 }
 .item-info {
     background: linear-gradient(to left, #e68baf, #ed6ea0);

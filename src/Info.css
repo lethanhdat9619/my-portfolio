@@ -1,5 +1,7 @@
 
-
+.info-container {
+    padding-left: 6%;
+}
 #category-item {
     padding-top: 3%;
     color: white;
